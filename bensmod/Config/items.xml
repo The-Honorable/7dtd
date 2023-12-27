@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+
+	<set xpath="/items/item[@name='ammo762mmBulletBall']/property[@name='Stacknumber']/@value">1000</set>
+	<set xpath="/items/item[@name='ammoShotgunShell']/property[@name='Stacknumber']/@value">1000</set>
+	<set xpath="/items/item[@name='ammoShotgunSlug']/property[@name='Stacknumber']/@value">1000</set>
+	<set xpath="/items/item[@name='ammoShotgunBreachingSlug']/property[@name='Stacknumber']/@value">1000</set>
+	<set xpath="/items/item[@name='ammo9mmBulletBall']/property[@name='Stacknumber']/@value">1000</set>
+	<set xpath="/items/item[@name='medicalBandage']/property[@name='Stacknumber']/@value">20</set>
+	<set xpath="/items/item[@name='medicalFirstAidBandage']/property[@name='Stacknumber']/@value">10</set>
+	<set xpath="/items/item[@name='medicalFirstAidKit']/property[@name='Stacknumber']/@value">10</set>
+	<set xpath="/items/item[@name='drinkJarBoiledWater']/property[@name='Stacknumber']/@value">25</set>
+	<set xpath="/items/item[@name='drinkJarBeer']/property[@name='Stacknumber']/@value">25</set>
+	<set xpath="/items/item[@name='drinkJarYuccaJuice']/property[@name='Stacknumber']/@value">25</set>
+	<set xpath="/items/item[@name='drinkJarCoffee']/property[@name='Stacknumber']/@value">25</set>
+	<set xpath="/items/item[@name='drinkJarPureMineralWater']/property[@name='Stacknumber']/@value">25</set>
+	<set xpath="/items/item[@name='resourceBuckshot']/property[@name='Stacknumber']/@value">10000</set>
+	<set xpath="/items/item[@name='resourceBulletCasing']/property[@name='Stacknumber']/@value">10000</set>
+	<set xpath="/items/item[@name='resourceBulletTip']/property[@name='Stacknumber']/@value">10000</set>
+	<set xpath="/items/item[@name='resourceCobblestones']/property[@name='Stacknumber']/@value">10000</set>
+	<set xpath="/items/item[@name='resourceCement']/property[@name='Stacknumber']/@value">10000</set>
+	<set xpath="/items/item[@name='resourceConcreteMix']/property[@name='Stacknumber']/@value">10000</set>
+	<set xpath="/items/item[@name='ammoBundleMaster']/property[@name='Stacknumber']/@value">20</set>
+	<set xpath="/items/item[starts-with (@name,'ammoBundle9mm')]/property[@name='Stacknumber']/@value">20</set>
+	<set xpath="/items/item[starts-with (@name,'ammoBundle44')]/property[@name='Stacknumber']/@value">20</set>
+	<set xpath="/items/item[@name='foodRawMeat']/property[@name='Stacknumber']/@value">250</set>
+	<set xpath="/items/item[@name='foodRottingFlesh']/property[@name='Stacknumber']/@value">250</set>
+
+
+<!-- modifying item stats here -->
+
+<!-- spear: increase range slightly -->
+	<set xpath="items/item[contains(@name,'Spear')]/property[@class='Action0']/property[@name='Range']/@value">3.2</set>
+	<set xpath="items/item[contains(@name,'Spear')]/property[@class='Action1']/property[@name='Range']/@value">4.0</set>
+
+<!-- sledgehammer: decrease non power attack stamina usage and increase power attack damage -->
+	<set xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']/effect_group[@name='meleeWpnSledgeT0StoneSledgehammer']/passive_effect[@name='StaminaLoss']/@value">15</set>
+	<set xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']/effect_group[@name='meleeWpnSledgeT1IronSledgehammer']/passive_effect[@name='StaminaLoss']/@value">22</set>
+	<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/effect_group[@name='meleeWpnSledgeT3SteelSledgehammer']/passive_effect[@name='StaminaLoss']/@value">30</set>
+	<set xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']/effect_group[@name='Power Attack']/passive_effect[@name='EntityDamage']/@value">1.5</set>
+	<set xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']/effect_group[@name='Power Attack']/passive_effect[@name='EntityDamage']/@value">1.5</set>
+	<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/effect_group[@name='Power Attack']/passive_effect[@name='EntityDamage']/@value">1.5</set>
+
+
+<!-- fist weapon: increase range slightly and boost dmg more to make it worth using -->
+	<set xpath="items/item[contains(@name,'Knuckles')]/effect_group[contains(@name,'Knuckles')]/passive_effect[@name='AttacksPerMinute']/@value">110</set>
+	<set xpath="items/item[contains(@name,'Knuckles')]/effect_group[contains(@name,'Knuckles')]/passive_effect[@name='ModPowerBonus']/@value">.2</set>
+	<set xpath="items/item[contains(@name,'Knuckles')]/effect_group[@name='Power Attack']/passive_effect[@name='EntityDamage']/@value">1.2</set>
+
+
+	<set xpath="/items/item[@name='meleeWpnKnucklesT0LeatherKnuckles']/effect_group[@name='meleeWpnKnucklesT0LeatherKnuckles']/passive_effect[@name='EntityDamage']/@value">10</set>
+	<set xpath="/items/item[@name='meleeWpnKnucklesT1IronKnuckles']/effect_group[@name='meleeWpnKnucklesT1IronKnuckles']/passive_effect[@name='EntityDamage']/@value">17</set>
+	<set xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']/effect_group[@name='meleeWpnKnucklesT3SteelKnuckles']/passive_effect[@name='EntityDamage']/@value">28</set>
+
+	<!-- knives/blades: slight speed increase and slight dmg increase -->
+	<set xpath="items/item[contains(@name,'Knife')]/effect_group[contains(@name,'Knife')]/passive_effect[@name='AttacksPerMinute']/@value">135</set>
+
+	<set xpath="/items/item[@name='meleeWpnBladeT0BoneKnife']/effect_group[@name='meleeWpnBladeT0BoneKnife']/passive_effect[@name='EntityDamage']/@value">7</set>
+	<set xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']/effect_group[@name='meleeWpnBladeT1HuntingKnife']/passive_effect[@name='EntityDamage']/@value">17</set>
+	<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='meleeWpnBladeT3Machete']/passive_effect[@name='EntityDamage']/@value">30</set>
+	<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='meleeWpnBladeT3Machete']/passive_effect[@name='AttacksPerMinute']/@value">70</set>
+
+	<!-- bows: projectile velocity, damage falloff range, rounds per minute and sneak damage bonus -->
+
+	<!-- gunBowT0PrimitiveBow -->
+	<set xpath="/items/item[@name='gunBowT0PrimitiveBow']/effect_group[@name='gunBowT0PrimitiveBow']/passive_effect[@name='DamageFalloffRange']/@value">40</set>
+	<set xpath="/items/item[@name='gunBowT0PrimitiveBow']/effect_group[@name='gunBowT0PrimitiveBow']/passive_effect[@name='MaxRange']/@value">120</set>
+	<set xpath="/items/item[@name='gunBowT0PrimitiveBow']/effect_group[@name='sneak damage bonus']/passive_effect[@name='EntityDamage']/@value">2.5</set>
+	<set xpath="/items/item[@name='gunBowT0PrimitiveBow']/effect_group[@name='gunBowT0PrimitiveBow']/passive_effect[@name='ModPowerBonus']/@value">.2</set>
+
+
+	<!-- gunBowT1WoodenBow -->
+	<set xpath="/items/item[@name='gunBowT1WoodenBow']/effect_group[@name='gunBowT1WoodenBow']/passive_effect[@name='DamageFalloffRange']/@value">55</set>
+	<set xpath="/items/item[@name='gunBowT1WoodenBow']/effect_group[@name='gunBowT1WoodenBow']/passive_effect[@name='MaxRange']/@value">135</set>
+	<set xpath="/items/item[@name='gunBowT1WoodenBow']/effect_group[@name='sneak damage bonus']/passive_effect[@name='EntityDamage']/@value">2.5</set>
+	<set xpath="/items/item[@name='gunBowT1WoodenBow']/effect_group[@name='gunBowT1WoodenBow']/passive_effect[@name='ModPowerBonus']/@value">.2</set>
+
+	<!-- gunBowT3CompoundBow -->
+	<set xpath="/items/item[@name='gunBowT3CompoundBow']/effect_group[@name='gunBowT3CompoundBow']/passive_effect[@name='DamageFalloffRange']/@value">70</set>
+	<set xpath="/items/item[@name='gunBowT3CompoundBow']/effect_group[@name='gunBowT3CompoundBow']/passive_effect[@name='MaxRange']/@value">150</set>
+	<set xpath="/items/item[@name='gunBowT3CompoundBow']/effect_group[@name='sneak damage bonus']/passive_effect[@name='EntityDamage']/@value">2.5</set>
+	<set xpath="/items/item[@name='gunBowT3CompoundBow']/effect_group[@name='gunBowT3CompoundBow']/passive_effect[@name='ModPowerBonus']/@value">.2</set>
+
+	<!-- gunBowT1IronCrossbow -->
+	<set xpath="/items/item[@name='gunBowT1IronCrossbow']/effect_group[@name='gunBowT1IronCrossbow']/passive_effect[@name='DamageFalloffRange']/@value">95</set>
+	<set xpath="/items/item[@name='gunBowT1IronCrossbow']/effect_group[@name='gunBowT1IronCrossbow']/passive_effect[@name='MaxRange']/@value">170</set>
+	<set xpath="/items/item[@name='gunBowT1IronCrossbow']/effect_group[@name='sneak damage bonus']/passive_effect[@name='EntityDamage']/@value">2.5</set>
+	<set xpath="/items/item[@name='gunBowT1IronCrossbow']/effect_group[@name='gunBowT1IronCrossbow']/passive_effect[@name='ModPowerBonus']/@value">.2</set>
+
+	<!-- gunBowT3CompoundCrossbow -->
+	<set xpath="/items/item[@name='gunBowT3CompoundCrossbow']/effect_group[@name='gunBowT3CompoundCrossbow']/passive_effect[@name='DamageFalloffRange']/@value">110</set>
+	<set xpath="/items/item[@name='gunBowT3CompoundCrossbow']/effect_group[@name='gunBowT3CompoundCrossbow']/passive_effect[@name='MaxRange']/@value">200</set>
+	<set xpath="/items/item[@name='gunBowT3CompoundCrossbow']/effect_group[@name='sneak damage bonus']/passive_effect[@name='EntityDamage']/@value">2.5</set>
+	<set xpath="/items/item[@name='gunBowT3CompoundCrossbow']/effect_group[@name='gunBowT3CompoundCrossbow']/passive_effect[@name='ModPowerBonus']/@value">.2</set>
+
+	<!-- arrow/bolts: buffing damage slightly -->
+
+	<set xpath="/items/item[@name='ammoArrowStone']/effect_group[@name='ammoArrowStone']/passive_effect[@name='EntityDamage']/@value">40</set>
+	<set xpath="/items/item[@name='ammoArrowIron']/effect_group[@name='ammoArrowIron']/passive_effect[@name='EntityDamage']/@value">45</set>
+	<set xpath="/items/item[@name='ammoArrowSteelAP']/effect_group[@name='ammoArrowSteelAP']/passive_effect[@name='EntityDamage']/@value">50</set>
+	<set xpath="/items/item[@name='ammoArrowFlaming']/effect_group[@name='ammoArrowFlaming']/passive_effect[@name='EntityDamage']/@value">30</set>
+
+
+	<set xpath="/items/item[@name='ammoCrossbowBoltStone']/effect_group[@name='ammoCrossbowBoltStone']/passive_effect[@name='EntityDamage']/@value">60</set>
+	<set xpath="/items/item[@name='ammoCrossbowBoltIron']/effect_group[@name='ammoCrossbowBoltIron']/passive_effect[@name='EntityDamage']/@value">68</set>
+	<set xpath="/items/item[@name='ammoCrossbowBoltSteelAP']/effect_group[@name='ammoCrossbowBoltSteelAP']/passive_effect[@name='EntityDamage']/@value">73</set>
+	<set xpath="/items/item[@name='ammoCrossbowBoltFlaming']/effect_group[@name='ammoCrossbowBoltFlaming']/passive_effect[@name='EntityDamage']/@value">45</set>
+
+	<!-- gun ammo buffs-->
+	<!-- 9mm-->
+	<set xpath="/items/item[@name='ammo9mmBulletBall']/effect_group[@name='ammo9mmBulletBall']/passive_effect[@name='EntityDamage']/@value">36</set>
+	<set xpath="/items/item[@name='ammo9mmBulletHP']/effect_group[@name='ammo9mmBulletHP']/passive_effect[@name='EntityDamage']/@value">40</set>
+	<set xpath="/items/item[@name='ammo9mmBulletAP']/effect_group[@name='ammo9mmBulletAP']/passive_effect[@name='EntityDamage']/@value">43</set>
+
+	<!-- 44m-->
+	<set xpath="/items/item[@name='ammo44MagnumBulletBall']/effect_group[@name='ammo44MagnumBulletBall']/passive_effect[@name='EntityDamage']/@value">80</set>
+	<set xpath="/items/item[@name='ammo44MagnumBulletHP']/effect_group[@name='ammo44MagnumBulletHP']/passive_effect[@name='EntityDamage']/@value">90</set>
+	<set xpath="/items/item[@name='ammo44MagnumBulletAP']/effect_group[@name='ammo44MagnumBulletAP']/passive_effect[@name='EntityDamage']/@value">100</set>
+
+	<!-- 762mm-->
+	<set xpath="/items/item[@name='ammo762mmBulletBall']/effect_group[@name='ammo762mmBulletBall']/passive_effect[@name='EntityDamage']/@value">50</set>
+	<set xpath="/items/item[@name='ammo762mmBulletHP']/effect_group[@name='ammo762mmBulletHP']/passive_effect[@name='EntityDamage']/@value">55</set>
+	<set xpath="/items/item[@name='ammo762mmBulletAP']/effect_group[@name='ammo762mmBulletAP']/passive_effect[@name='EntityDamage']/@value">60</set>
+
+	<!-- shotgun-->
+	<set xpath="/items/item[@name='ammoShotgunShell']/effect_group[@name='ammoShotgunShell']/passive_effect[@name='EntityDamage']/@value">13</set>
+	<set xpath="/items/item[@name='ammoShotgunSlug']/effect_group[@name='ammoShotgunSlug']/passive_effect[@name='EntityDamage']/@value">150</set>
+	<set xpath="/items/item[@name='ammoShotgunBreachingSlug']/effect_group[@name='ammoShotgunBreachingSlug']/passive_effect[@name='EntityDamage']/@value">130</set>
+
+	<!-- turret-->
+	<set xpath="/items/item[@name='ammoJunkTurretRegular']/effect_group[@name='ammoJunkTurretRegular']/passive_effect[@name='EntityDamage']/@value">15</set>
+	<set xpath="/items/item[@name='ammoJunkTurretShell']/effect_group[@name='ammoJunkTurretShell']/passive_effect[@name='EntityDamage']/@value">5</set>
+	<set xpath="/items/item[@name='ammoJunkTurretAP']/effect_group[@name='ammoJunkTurretAP']/passive_effect[@name='EntityDamage']/@value">20</set>
+
+</configs>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+
+  <append xpath="/lootcontainers/lootgroup[@name='groupDewCollectorLoot01']">
+	<item name="resourceWaterFilter" count="1" loot_prob_template="medLow"/>
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='groupDewCollectorLoot02']">
+	<item name="resourceWaterFilter" count="1" loot_prob_template="medLow"/>
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='groupDewCollectorLoot03']">
+	<item name="resourceWaterFilter" count="1" loot_prob_template="medLow"/>
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='groupSinks01']">
+	<item name="resourceAcid" loot_prob_template="low"/>
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='groupSinks02']">
+	<item name="resourceAcid" loot_prob_template="low"/>
+  </append>
+</configs>

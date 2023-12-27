@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+	<!-- Here you can modify speed, first value is forward second value is backwards -->
+	<set xpath="vehicles/vehicle[@name='vehicleBicycle']/property[@name='velocityMax']/@value">8,5</set>
+	<set xpath="vehicles/vehicle[@name='vehicleMinibike']/property[@name='velocityMax']/@value">10,5</set>
+	<set xpath="vehicles/vehicle[@name='vehicleMotorcycle']/property[@name='velocityMax']/@value">13,8</set>
+	<set xpath="vehicles/vehicle[@name='vehicle4x4Truck']/property[@name='velocityMax']/@value">14,8</set>
+</configs>

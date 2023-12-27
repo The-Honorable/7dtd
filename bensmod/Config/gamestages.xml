@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+  <set xpath="/gamestages/config/@daysAliveChangeWhenKilled">10</set>
+  <set xpath="/gamestages/config/@difficultyBonus">.5</set>
+  <set xpath="/gamestages/config/@lootBonusEvery">25</set>
+</configs>
