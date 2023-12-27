@@ -24,4 +24,26 @@
 		<property name="SizeScale" value="2.0"/>
 	</append>
 
+
+	<!-- changes to player-->
+
+	<!-- base speed + 10%-->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='WalkSpeed']/@value">1.7</set> <!-- original 1.53-->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='RunSpeed']/@value">1.2</set> <!-- original 1.10-->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='CrouchSpeed']/@value">1.1</set> <!-- original 1.04-->
+	<!-- change starting items-->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalMP']/@value">drinkJarBoiledWater=5,foodCanChili=5,medicalFirstAidBandage,meleeToolTorch</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvival']/@value">drinkJarBoiledWater=5,foodCanChili=5,meleeToolTorch,meleeToolAxeT3Chainsaw,vehicleBicyclePlaceable,meleeToolSalvageT1Wrench,meleeToolAxeT1IronFireaxe</set> 
+	
+	<!-- less exp gained-->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@tags='Upgrading']/@value">-.5</set> <!-- original 5-->
+
+
+	<insertAfter xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='PlayerExpGain']">
+		<passive_effect name="PlayerExpGain" operation="perc_add" value="-.4" tags="Harvesting"/>
+		<passive_effect name="PlayerExpGain" operation="perc_add" value="-.2" tags="Kill"/>
+		<passive_effect name="PlayerExpGain" operation="perc_add" value="-.9" tags="Selling"/>
+	</insertAfter>
+	
+
 </configs>

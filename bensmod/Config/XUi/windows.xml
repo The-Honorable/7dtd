@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
+	
+	<!-- remove day/time -->
+	<set xpath="/windows/window[@name='windowCompass']/sprite[@pos='240,-60']/label/@text">^</set>
+
+	<!-- allows the HP bar to work in all modes -->
+    <set xpath="/windows/window[@name='windowTargetBar']/@visibility">always</set>
+	
 	<!-- This removes the vanilla food bar -->
 	<remove xpath="/windows/window[@name='windowToolbelt']/rect/rect[@pos='0,-77']"></remove>
 	<!-- This removes the vanilla water bar -->

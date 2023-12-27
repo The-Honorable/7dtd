@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
 
+	<!-- increase stack sizes -->
 	<set xpath="/items/item[@name='ammo762mmBulletBall']/property[@name='Stacknumber']/@value">1000</set>
 	<set xpath="/items/item[@name='ammoShotgunShell']/property[@name='Stacknumber']/@value">1000</set>
 	<set xpath="/items/item[@name='ammoShotgunSlug']/property[@name='Stacknumber']/@value">1000</set>
@@ -131,5 +132,22 @@
 	<set xpath="/items/item[@name='ammoJunkTurretRegular']/effect_group[@name='ammoJunkTurretRegular']/passive_effect[@name='EntityDamage']/@value">15</set>
 	<set xpath="/items/item[@name='ammoJunkTurretShell']/effect_group[@name='ammoJunkTurretShell']/passive_effect[@name='EntityDamage']/@value">5</set>
 	<set xpath="/items/item[@name='ammoJunkTurretAP']/effect_group[@name='ammoJunkTurretAP']/passive_effect[@name='EntityDamage']/@value">20</set>
+
+
+
+	<!-- modify healing/medical items-->
+	<!-- reduce healing by half-->
+	<set xpath="/items/item[@name='medicalFirstAidBandage']/effect_group/triggered_effect[@trigger='onSelfPrimaryActionEnd']/@value">15</set> <!-- original 30 -->
+	<set xpath="/items/item[@name='medicalFirstAidBandage']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionEnd']/@value">15</set> <!-- original 30 -->
+
+	<set xpath="/items/item[@name='medicalFirstAidKit']/effect_group/triggered_effect[@trigger='onSelfPrimaryActionEnd']/@value">90</set> <!-- original 180 -->
+	<set xpath="/items/item[@name='medicalFirstAidKit']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionEnd']/@value">90</set> <!-- original 180 -->
+
+	<!-- reduce infection cure by half -->
+	<set xpath="/items/item[@name='drugHerbalAntibiotics']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionEnd']/@value">7</set> <!-- original 10 -->
+
+	<set xpath="/items/item[@name='drugAntibiotics']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionEnd']/@value">15</set> <!-- original 10 -->
+
+
 
 </configs>

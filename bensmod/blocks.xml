@@ -1,0 +1,5 @@
+<configs>
+    <remove xpath="//blocks/block[@name='loudspeaker']/property[@name='OpenSound']" />
+	<remove xpath="//blocks/block[@name='loudspeaker']/property[@name='CloseSound']" />
+	<remove xpath="//blocks/block[@name='loudspeaker']/property[@name='WarningSound']" />
+</configs>
