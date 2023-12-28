@@ -18,9 +18,9 @@
 - snow left at 40
 - storm = 10, from 8
 - default min temp changed to 18 from 26
-- fog min temp changed from 20 to 12
-- snow min temp changed from 18 to 9
-- storm min temp changed from 12 to 0
+- fog min temp changed to 12 from 20
+- snow min temp changed to 9 from 18
+- storm min temp changed to 0 from 12
 - overall more precipitation when it snows/storms
 - overall more fog during foggy times
 - overall more wind base +10
