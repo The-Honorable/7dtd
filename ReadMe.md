@@ -1,3 +1,13 @@
+# Mods that are not included but also being used
+- Doughs-UI-RemoveDayAndTime
+- KHA21-12CraftQueue
+- KHA21-FoodWater
+- KHA21-HPBars
+- KHA21-LockableInvSlots
+- KHA21-RemovePOINames
+- KHA21-RemovePOINamesTracker
+
+
 # Changes included in the mod
 
 ## Biome changes
