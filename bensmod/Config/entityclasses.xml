@@ -44,7 +44,7 @@
 
 	<!-- increase general food/water drain from recovring hp/stamina by 10%-->
 
-	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='WaterLossPerStaminaPointGained']/@value">0.4983</set> <!-- original 0.00453-->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='WaterLossPerStaminaPointGained']/@value">0.004983</set> <!-- original 0.00453-->
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='FoodLossPerStaminaPointGained']/@value">0.004588</set> <!-- original 0.00408-->
 
 

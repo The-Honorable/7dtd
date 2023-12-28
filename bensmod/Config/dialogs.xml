@@ -1,0 +1,12 @@
+<dialogs>
+
+	<remove xpath="//dialog[@id='trader']/statement[@id='start']/response_entry[@id='jobsnone']" />
+	<remove xpath="//dialog[@id='trader']/statement[@id='start']/response_entry[@id='jobshave1']" />
+	<remove xpath="//dialog[@id='trader']/statement[@id='start']/response_entry[@id='jobshave2']" />
+	<remove xpath="//dialog[@id='trader']/statement[@id='start']/response_entry[@id='jobshave3']" />
+	<remove xpath="//dialog[@id='trader']/statement[@id='start']/response_entry[@id='jobshave4']" />
+	<remove xpath="//dialog[@id='trader']/statement[@id='start']/response_entry[@id='jobshave5']" />
+	<remove xpath="//dialog[@id='trader']/statement[@id='start']/response_entry[@id='jobshave6']" />
+	<remove xpath="//dialog[@id='trader']/statement[@id='start']/response_entry[@id='specialjobshave']" />
+		
+</dialogs>
