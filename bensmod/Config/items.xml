@@ -107,28 +107,8 @@
 	<set xpath="/items/item[@name='ammoCrossbowBoltSteelAP']/effect_group[@name='ammoCrossbowBoltSteelAP']/passive_effect[@name='EntityDamage']/@value">73</set>
 	<set xpath="/items/item[@name='ammoCrossbowBoltFlaming']/effect_group[@name='ammoCrossbowBoltFlaming']/passive_effect[@name='EntityDamage']/@value">45</set>
 
-	<!-- gun ammo buffs-->
-	<!-- 9mm-->
-	<set xpath="/items/item[@name='ammo9mmBulletBall']/effect_group[@name='ammo9mmBulletBall']/passive_effect[@name='EntityDamage']/@value">36</set>
-	<set xpath="/items/item[@name='ammo9mmBulletHP']/effect_group[@name='ammo9mmBulletHP']/passive_effect[@name='EntityDamage']/@value">40</set>
-	<set xpath="/items/item[@name='ammo9mmBulletAP']/effect_group[@name='ammo9mmBulletAP']/passive_effect[@name='EntityDamage']/@value">43</set>
 
-	<!-- 44m-->
-	<set xpath="/items/item[@name='ammo44MagnumBulletBall']/effect_group[@name='ammo44MagnumBulletBall']/passive_effect[@name='EntityDamage']/@value">80</set>
-	<set xpath="/items/item[@name='ammo44MagnumBulletHP']/effect_group[@name='ammo44MagnumBulletHP']/passive_effect[@name='EntityDamage']/@value">90</set>
-	<set xpath="/items/item[@name='ammo44MagnumBulletAP']/effect_group[@name='ammo44MagnumBulletAP']/passive_effect[@name='EntityDamage']/@value">100</set>
-
-	<!-- 762mm-->
-	<set xpath="/items/item[@name='ammo762mmBulletBall']/effect_group[@name='ammo762mmBulletBall']/passive_effect[@name='EntityDamage']/@value">50</set>
-	<set xpath="/items/item[@name='ammo762mmBulletHP']/effect_group[@name='ammo762mmBulletHP']/passive_effect[@name='EntityDamage']/@value">55</set>
-	<set xpath="/items/item[@name='ammo762mmBulletAP']/effect_group[@name='ammo762mmBulletAP']/passive_effect[@name='EntityDamage']/@value">60</set>
-
-	<!-- shotgun-->
-	<set xpath="/items/item[@name='ammoShotgunShell']/effect_group[@name='ammoShotgunShell']/passive_effect[@name='EntityDamage']/@value">13</set>
-	<set xpath="/items/item[@name='ammoShotgunSlug']/effect_group[@name='ammoShotgunSlug']/passive_effect[@name='EntityDamage']/@value">150</set>
-	<set xpath="/items/item[@name='ammoShotgunBreachingSlug']/effect_group[@name='ammoShotgunBreachingSlug']/passive_effect[@name='EntityDamage']/@value">130</set>
-
-	<!-- turret-->
+	<!-- buff turret ammo damage -->
 	<set xpath="/items/item[@name='ammoJunkTurretRegular']/effect_group[@name='ammoJunkTurretRegular']/passive_effect[@name='EntityDamage']/@value">15</set>
 	<set xpath="/items/item[@name='ammoJunkTurretShell']/effect_group[@name='ammoJunkTurretShell']/passive_effect[@name='EntityDamage']/@value">5</set>
 	<set xpath="/items/item[@name='ammoJunkTurretAP']/effect_group[@name='ammoJunkTurretAP']/passive_effect[@name='EntityDamage']/@value">20</set>

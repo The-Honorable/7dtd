@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
 
-	<set xpath="/progression/perks/perk[@name='perkWellInsulated']/level_requirements/requirement[@desc_key='reqFortitudeLevel07']/@value">10</set> <!-- original 7 -->
+	<set xpath="/progression/perks/perk[@name='perkWellInsulated']/level_requirements[@level='3']/requirement[@name='ProgressionLevel']/@value">10</set> <!-- original 7 -->
+
+    <set xpath="/progression/perks/perk[@name='perkWellInsulated']/level_requirements[@level='3']/requirement[@name='ProgressionLevel']/@desc_key">reqFortitudeLevel10</set> <!-- original 7 -->
 
     <set xpath="/progression/perks/perk[@name='perkWellInsulated']/effect_group/passive_effect[@name='HypothermalResist']/@value">5,10,15</set> <!-- original 10,20,20 -->
 

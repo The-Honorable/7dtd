@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <configs>
   <!-- increase cost of trader selling items and decrease cost at which they buy items-->
- <set xpath="/traders/@buy_markup">10</set>
- <set xpath="/traders/@sell_markdown">.05</set>
+ <set xpath="/traders/@buy_markup">5</set>
+ <set xpath="/traders/@sell_markdown">.15</set>
 </configs>

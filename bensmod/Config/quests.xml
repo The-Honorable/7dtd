@@ -6,6 +6,6 @@
   <set xpath="/quests/quest[@id='tier1_buried_supplies']/property[@name='difficulty_tier']/@value">2</set>
 
   <!-- changing basic survival quest reward from 4 skill points to 1-->
-  <set xpath="/quests/quest[@id='quest_BasicSurvival8']/reward[@type='SkillPoints']/@value">1</set>
+  <set xpath="/quests/quest[@id='quest_BasicSurvival8']/reward[@type='SkillPoints']/@value">3</set>
 
 </configs>
