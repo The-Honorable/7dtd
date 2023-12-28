@@ -61,7 +61,7 @@
 	<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='meleeWpnBladeT3Machete']/passive_effect[@name='EntityDamage']/@value">30</set>
 	<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='meleeWpnBladeT3Machete']/passive_effect[@name='AttacksPerMinute']/@value">70</set>
 
-	<!-- bows: projectile velocity, damage falloff range, rounds per minute and sneak damage bonus -->
+	<!-- bows: damage falloff range, rounds per minute and sneak damage bonus -->
 
 	<!-- gunBowT0PrimitiveBow -->
 	<set xpath="/items/item[@name='gunBowT0PrimitiveBow']/effect_group[@name='gunBowT0PrimitiveBow']/passive_effect[@name='DamageFalloffRange']/@value">40</set>
@@ -94,25 +94,10 @@
 	<set xpath="/items/item[@name='gunBowT3CompoundCrossbow']/effect_group[@name='sneak damage bonus']/passive_effect[@name='EntityDamage']/@value">2.5</set>
 	<set xpath="/items/item[@name='gunBowT3CompoundCrossbow']/effect_group[@name='gunBowT3CompoundCrossbow']/passive_effect[@name='ModPowerBonus']/@value">.2</set>
 
-	<!-- arrow/bolts: buffing damage slightly -->
-
-	<set xpath="/items/item[@name='ammoArrowStone']/effect_group[@name='ammoArrowStone']/passive_effect[@name='EntityDamage']/@value">40</set>
-	<set xpath="/items/item[@name='ammoArrowIron']/effect_group[@name='ammoArrowIron']/passive_effect[@name='EntityDamage']/@value">45</set>
-	<set xpath="/items/item[@name='ammoArrowSteelAP']/effect_group[@name='ammoArrowSteelAP']/passive_effect[@name='EntityDamage']/@value">50</set>
-	<set xpath="/items/item[@name='ammoArrowFlaming']/effect_group[@name='ammoArrowFlaming']/passive_effect[@name='EntityDamage']/@value">30</set>
-
-
-	<set xpath="/items/item[@name='ammoCrossbowBoltStone']/effect_group[@name='ammoCrossbowBoltStone']/passive_effect[@name='EntityDamage']/@value">60</set>
-	<set xpath="/items/item[@name='ammoCrossbowBoltIron']/effect_group[@name='ammoCrossbowBoltIron']/passive_effect[@name='EntityDamage']/@value">68</set>
-	<set xpath="/items/item[@name='ammoCrossbowBoltSteelAP']/effect_group[@name='ammoCrossbowBoltSteelAP']/passive_effect[@name='EntityDamage']/@value">73</set>
-	<set xpath="/items/item[@name='ammoCrossbowBoltFlaming']/effect_group[@name='ammoCrossbowBoltFlaming']/passive_effect[@name='EntityDamage']/@value">45</set>
-
-
 	<!-- buff turret ammo damage -->
 	<set xpath="/items/item[@name='ammoJunkTurretRegular']/effect_group[@name='ammoJunkTurretRegular']/passive_effect[@name='EntityDamage']/@value">15</set>
 	<set xpath="/items/item[@name='ammoJunkTurretShell']/effect_group[@name='ammoJunkTurretShell']/passive_effect[@name='EntityDamage']/@value">5</set>
 	<set xpath="/items/item[@name='ammoJunkTurretAP']/effect_group[@name='ammoJunkTurretAP']/passive_effect[@name='EntityDamage']/@value">20</set>
-
 
 
 	<!-- modify healing/medical items-->
@@ -126,10 +111,47 @@
 	<!-- reduce infection cure by half -->
 	<set xpath="/items/item[@name='drugHerbalAntibiotics']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionEnd']/@value">7</set> <!-- original 10 -->
 
-	<set xpath="/items/item[@name='drugAntibiotics']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionEnd']/@value">15</set> <!-- original 10 -->
+	<set xpath="/items/item[@name='drugAntibiotics']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionEnd']/@value">15</set> <!-- original 25 -->
 
 
+	<!-- armor changes -->
 	<!-- santa hat op -->
 	<set xpath="/items/item[@name='armorSantaHat']/effect_group/passive_effect[@name='HypothermalResist']/@value">12,14</set> <!-- original 21.5,25.5 -->
+
+    <!-- increase heavy armor mobility penalty -->
+	<set xpath="items/item[contains(@name,'armorMilitary')]/effect_group/passive_effect[@name='Mobility']/@value">-.06</set> <!-- default -.04-->
+
+	<set xpath="items/item[contains(@name,'armorScrap')]/effect_group/passive_effect[@name='Mobility']/@value">-.07</set> <!-- default -.06-->
+
+	<set xpath="items/item[contains(@name,'armorIron')]/effect_group/passive_effect[@name='Mobility']/@value">-.08</set> <!-- default -.06-->
+
+	<set xpath="items/item[contains(@name,'armorSteel')]/effect_group/passive_effect[@name='Mobility']/@value">-.09</set> <!-- default -.06-->
+
+
+	<!-- Magazine Bonus Values -->
+	<set xpath="items/item[@name='harvestingToolsSkillMagazine']/effect_group/triggered_effect[@progression_name='craftingHarvestingTools']/@level">2</set>
+	<set xpath="items/item[@name='repairToolsSkillMagazine']/effect_group/triggered_effect[@progression_name='craftingRepairTools']/@level">2</set>
+	<set xpath="items/item[@name='salvageToolsSkillMagazine']/effect_group/triggered_effect[@progression_name='craftingSalvageTools']/@level">2</set>
+	<set xpath="items/item[@name='knucklesSkillMagazine']/effect_group/triggered_effect[@progression_name='craftingKnuckles']/@level">2</set>
+	<set xpath="items/item[@name='bladesSkillMagazine']/effect_group/triggered_effect[@progression_name='craftingBlades']/@level">2</set>
+	<set xpath="items/item[@name='clubsSkillMagazine']/effect_group/triggered_effect[@progression_name='craftingClubs']/@level">2</set>
+	<set xpath="items/item[@name='sledgehammersSkillMagazine']/effect_group/triggered_effect[@progression_name='craftingSledgehammers']/@level">2</set>
+	<set xpath="items/item[@name='spearsSkillMagazine']/effect_group/triggered_effect[@progression_name='craftingSpears']/@level">2</set>
+	<set xpath="items/item[@name='bowsSkillMagazine']/effect_group/triggered_effect[@progression_name='craftingBows']/@level">2</set>
+	<set xpath="items/item[@name='handgunsSkillMagazine']/effect_group/triggered_effect[@progression_name='craftingHandguns']/@level">2</set>
+	<set xpath="items/item[@name='shotgunsSkillMagazine']/effect_group/triggered_effect[@progression_name='craftingShotguns']/@level">2</set>
+	<set xpath="items/item[@name='riflesSkillMagazine']/effect_group/triggered_effect[@progression_name='craftingRifles']/@level">2</set>
+	<set xpath="items/item[@name='machineGunsSkillMagazine']/effect_group/triggered_effect[@progression_name='craftingMachineGuns']/@level">2</set>
+	<set xpath="items/item[@name='explosivesSkillMagazine']/effect_group/triggered_effect[@progression_name='craftingExplosives']/@level">2</set>
+	<set xpath="items/item[@name='roboticsSkillMagazine']/effect_group/triggered_effect[@progression_name='craftingRobotics']/@level">2</set>
+	<set xpath="items/item[@name='armorSkillMagazine']/effect_group/triggered_effect[@progression_name='craftingArmor']/@level">2</set>
+	<set xpath="items/item[@name='medicalSkillMagazine']/effect_group/triggered_effect[@progression_name='craftingMedical']/@level">2</set>
+	<set xpath="items/item[@name='foodSkillMagazine']/effect_group/triggered_effect[@progression_name='craftingFood']/@level">2</set>
+	<set xpath="items/item[@name='seedSkillMagazine']/effect_group/triggered_effect[@progression_name='craftingSeeds']/@level">2</set>
+	<set xpath="items/item[@name='electricianSkillMagazine']/effect_group/triggered_effect[@progression_name='craftingElectrician']/@level">2</set>
+	<set xpath="items/item[@name='trapsSkillMagazine']/effect_group/triggered_effect[@progression_name='craftingTraps']/@level">2</set>
+	<set xpath="items/item[@name='workstationSkillMagazine']/effect_group/triggered_effect[@progression_name='craftingWorkstations']/@level">2</set>
+	<set xpath="items/item[@name='vehiclesSkillMagazine']/effect_group/triggered_effect[@progression_name='craftingVehicles']/@level">2</set>
+
 
 </configs>
