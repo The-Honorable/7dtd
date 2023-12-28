@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<configs>
-	<!-- Read the xui.xml, add the new window and disable the old one -->
-	<set xpath="/xui/ruleset/window_group[@name='toolbelt']/window[@name='HUDLeftStatBars']/@name">KHHUDLeftStatBars</set>
-    <!-- Remove windowLocation to stop POI names and skulls showing up in the top right -->
-	<remove xpath="/xui/ruleset/window_group[@name='toolbelt']/window[@name='windowLocation']"></remove>
-</configs>

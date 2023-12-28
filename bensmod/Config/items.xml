@@ -129,5 +129,7 @@
 	<set xpath="/items/item[@name='drugAntibiotics']/effect_group/triggered_effect[@trigger='onSelfSecondaryActionEnd']/@value">15</set> <!-- original 10 -->
 
 
+	<!-- santa hat op -->
+	<set xpath="/items/item[@name='armorSantaHat']/effect_group/passive_effect[@name='HypothermalResist']/@value">12,14</set> <!-- original 21.5,25.5 -->
 
 </configs>
