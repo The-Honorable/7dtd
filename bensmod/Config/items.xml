@@ -31,7 +31,7 @@
 <!-- modifying item stats here -->
 
 <!-- spear: increase range slightly -->
-	<set xpath="items/item[contains(@name,'Spear')]/property[@class='Action0']/property[@name='Range']/@value">3.2</set>
+	<set xpath="items/item[contains(@name,'Spear')]/property[@class='Action0']/property[@name='Range']/@value">3</set>
 	<set xpath="items/item[contains(@name,'Spear')]/property[@class='Action1']/property[@name='Range']/@value">4.0</set>
 
 <!-- sledgehammer: decrease non power attack stamina usage and increase power attack damage -->
@@ -119,13 +119,13 @@
 	<set xpath="/items/item[@name='armorSantaHat']/effect_group/passive_effect[@name='HypothermalResist']/@value">12,14</set> <!-- original 21.5,25.5 -->
 
     <!-- increase heavy armor mobility penalty -->
-	<set xpath="items/item[contains(@name,'armorMilitary')]/effect_group/passive_effect[@name='Mobility']/@value">-.06</set> <!-- default -.04-->
+	<set xpath="items/item[contains(@name,'armorMilitary')]/effect_group/passive_effect[@name='Mobility']/@value">-.05</set> <!-- default -.04-->
 
-	<set xpath="items/item[contains(@name,'armorScrap')]/effect_group/passive_effect[@name='Mobility']/@value">-.07</set> <!-- default -.06-->
+	<set xpath="items/item[contains(@name,'armorScrap')]/effect_group/passive_effect[@name='Mobility']/@value">-.06</set> <!-- default -.06-->
 
-	<set xpath="items/item[contains(@name,'armorIron')]/effect_group/passive_effect[@name='Mobility']/@value">-.08</set> <!-- default -.06-->
+	<set xpath="items/item[contains(@name,'armorIron')]/effect_group/passive_effect[@name='Mobility']/@value">-.07</set> <!-- default -.06-->
 
-	<set xpath="items/item[contains(@name,'armorSteel')]/effect_group/passive_effect[@name='Mobility']/@value">-.09</set> <!-- default -.06-->
+	<set xpath="items/item[contains(@name,'armorSteel')]/effect_group/passive_effect[@name='Mobility']/@value">-.08</set> <!-- default -.06-->
 
 
 	<!-- Magazine Bonus Values -->
@@ -153,5 +153,9 @@
 	<set xpath="items/item[@name='workstationSkillMagazine']/effect_group/triggered_effect[@progression_name='craftingWorkstations']/@level">2</set>
 	<set xpath="items/item[@name='vehiclesSkillMagazine']/effect_group/triggered_effect[@progression_name='craftingVehicles']/@level">2</set>
 
+
+	<!-- make 4x4 truck 50% more tanky -->
+
+	<set xpath="items/item[@name='vehicle4x4TruckPlaceable']/effect_group[@name='vehicle4x4TruckPlaceable']/passive_effect[@name='DegradationMax']/@value">12000</set> <!-- original 8000 -->
 
 </configs>

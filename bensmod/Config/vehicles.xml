@@ -5,6 +5,6 @@
 	<set xpath="vehicles/vehicle[@name='vehicleBicycle']/property[@name='motorTorque']/@value">700,300</set>
 	<set xpath="vehicles/vehicle[@name='vehicleBicycle']/property[@name='turboScale']/@value">1.7, 1</set>
 	<set xpath="vehicles/vehicle[@name='vehicleMinibike']/property[@name='velocityMax']/@value">11,5</set>
-	<set xpath="vehicles/vehicle[@name='vehicleMotorcycle']/property[@name='velocityMax']/@value">13,8</set>
+	<set xpath="vehicles/vehicle[@name='vehicleMotorcycle']/property[@name='velocityMax']/@value">15,8</set>
 	<set xpath="vehicles/vehicle[@name='vehicle4x4Truck']/property[@name='velocityMax']/@value">13,8</set>
 </configs>

@@ -6,7 +6,7 @@
     
 	
 	<!-- make chickens and bunnies slightly slower-->
-	<set xpath="/entity_classes/entity_class[@name='animalChicken']/property[@name='MoveSpeedPanic'][@value='1.3']/@value">.9</set>
+	<set xpath="/entity_classes/entity_class[@name='animalChicken']/property[@name='MoveSpeedPanic'][@value='1.3']/@value">1.05</set>
 	<set xpath="/entity_classes/entity_class[@name='animalRabbit']/property[@name='MoveSpeedPanic'][@value='1.55']/@value">1.2</set>
 
 
@@ -14,14 +14,14 @@
 
 	<!-- Chicken -->
 	<append xpath="/entity_classes/entity_class[@name='animalChicken']">
-    	<!-- 50% bigger -->
-		<property name="SizeScale" value="1.5"/>
+    	<!-- 30% bigger -->
+		<property name="SizeScale" value="1.3"/>
 	</append>
 
 	<!-- Rabbit -->
 	<append xpath="/entity_classes/entity_class[@name='animalRabbit']">
-    	<!-- 100% bigger -->
-		<property name="SizeScale" value="2.0"/>
+    	<!-- 30% bigger -->
+		<property name="SizeScale" value="1.3"/>
 	</append>
 
 
@@ -35,19 +35,6 @@
 	<!-- change starting items-->
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvival']/@value">drinkJarBoiledWater=5,foodCanChili=5,meleeToolTorch,armorSantaHat</set> 
 	
-
-
-	<!-- increase general food/water drain over time by 10%-->
-	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='WaterChangeOT']/@value">0.066</set> <!-- original 0.06-->
-	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='FoodChangeOT']/@value">0.009163</set> <!-- original 0.00833-->
-
-
-	<!-- increase general food/water drain from recovring hp/stamina by 10%-->
-
-	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='WaterLossPerStaminaPointGained']/@value">0.004983</set> <!-- original 0.00453-->
-	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='FoodLossPerStaminaPointGained']/@value">0.004588</set> <!-- original 0.00408-->
-
-
 	
 	<!-- less exp gained-->
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@tags='Upgrading']/@value">-.5</set> <!-- original 5-->

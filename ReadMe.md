@@ -46,16 +46,11 @@
 ## Player changes
 
 ### Overall, player is slightly faster, gains slightly less exp, uses slightly more water/food and adjusted starting items
-- removed no death penalty buff that was added until level 5 or 6 (death hurts at all levels now)
 - Increase base player speeds by 10%
 - walkspeed changed to 1.7 from 1.53
 - runspeed changed to 1.2 to 1.1
 - crouchspeed changed to 1.1 from 1.04
 - starting items changed to drinkJarBoiledWater=5,foodCanChili=5,meleeToolTorch,armorSantaHat
-- water drain over time changed to 0.066 from 0.06
-- food drain over time changed to 0.009163 from 0.00833
-- WaterLossPerStaminaPointGained changed to 0.004983 from 00453
-- FoodLossPerStaminaPointGained changed to 0.004588 from 0.00408
 - playerexp gained from upgrading changed from x5 to -.5 (changed from 5x exp to half exp)
 - playerexp gained from harvesting changed to -.3 (30% reduction)
 - playerexp gained from killing changed to -.1 (10% reduction)
@@ -77,10 +72,10 @@
 ## Animal changes
 
 ### the wife wants to basically only hunt in this game, so chickens/rabbits are nerfed
-- chicken movementspeed when panic changed to .9 from 1.3
+- chicken movementspeed when panic changed to 1 from 1.3
 - rabbit movementspeed when panic changed to 1.2 from 1.55
-- chicken sizescale changed to 1.5 from 1 (50% bigger)
-- rabbit sizescale changed to 2 from 1 (100% bigger)
+- chicken sizescale changed to 1.3 from 1 (30% bigger)
+- rabbit sizescale changed to 1.3 from 1 (30% bigger)
 
 
 ## Zombie changes
@@ -98,7 +93,7 @@
 - resources stack to 10k
 
 ### spear changes
-- spear normal attack range increased to 3.2 from 2.6
+- spear normal attack range increased to 3 from 2.6
 - spear power attack range increased to 4.0 from 3.6
 
 ### sledgehammer changes
@@ -162,10 +157,10 @@
 
 ### armor changes
 - santa hat cold resist changed to 12,14 from 21.5, 25.5
-- Heavy Military armor mobility penalty increased to -.06 from -0.4
-- Heavy scrap armor mobility penalty increased to -.07 from -0.6
-- Heavy iron armor mobility penalty increased to -.08 from -0.6
-- Heavy steel armor mobility penalty increased to -.09 from -0.6
+- Heavy Military armor mobility penalty increased to -.05 from -0.4
+- Heavy scrap armor mobility penalty increased to -.06 from -0.6
+- Heavy iron armor mobility penalty increased to -.07 from -0.6
+- Heavy steel armor mobility penalty increased to -.08 from -0.6
 
 
 ### Skill Magazine Changes
@@ -186,6 +181,7 @@
 - mini bike velocity max changed to 11, 5 from 7,4
 - motorcycle velocity max changed to 13, 8 from 9.33, 6
 - truck velocity max changed to 13, 8 from 9.33, 9
+- truck DegradationMax changed to 12k from 8k
 
 
 
